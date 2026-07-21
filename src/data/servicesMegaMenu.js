@@ -1,11 +1,11 @@
-import servicesMegaIllustration from '../assets/illustrations/services-mega-menu.svg';
+import { realImages } from './realImages';
 
 export const servicesMegaMenu = {
   heading: 'Our Services',
   description: 'We build scalable digital solutions that help businesses innovate, grow and succeed.',
   image: {
-    src: servicesMegaIllustration,
-    alt: 'Software development and digital transformation illustration',
+    src: realImages.digitalTransformation,
+    alt: 'Professional digital transformation team working in a modern office',
   },
   services: [
     {

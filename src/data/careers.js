@@ -1,4 +1,4 @@
-import cultureWorkspace from '../assets/illustrations/careers-culture-workspace.svg';
+import { realImages } from './realImages';
 
 export const careersIntro = {
   eyebrow: 'Careers & Culture',
@@ -13,8 +13,8 @@ export const cultureOverview = {
   description:
     'Our teams collaborate closely, solve ambitious technology challenges and keep learning as the industry evolves. We value innovation-driven thinking, customer-first decisions and the ownership needed to build products that last.',
   image: {
-    src: cultureWorkspace,
-    alt: 'Modern collaborative technology workspace illustration',
+    src: realImages.officeCulture,
+    alt: 'Modern collaborative technology workspace with a professional team',
   },
 };
 

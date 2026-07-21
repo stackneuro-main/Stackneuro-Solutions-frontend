@@ -15,6 +15,12 @@
   background: var(--about-dark);
 }
 
+.about-page *,
+.about-page *::before,
+.about-page *::after {
+  min-width: 0;
+}
+
 .about-page__eyebrow {
   margin: 0 0 18px;
   color: var(--about-blue-soft);
@@ -322,6 +328,7 @@
   position: relative;
   display: grid;
   max-width: 980px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
   list-style: none;
@@ -344,6 +351,10 @@
   gap: 24px;
   align-items: start;
   padding: 0 0 38px;
+}
+
+.about-timeline__item > div {
+  min-width: 0;
 }
 
 .about-timeline__item span {
@@ -894,18 +905,56 @@
     grid-template-columns: 1fr;
   }
 
-  .about-ceo,
-  .about-timeline__item {
+  .about-ceo {
     grid-template-columns: 1fr;
   }
 
+  .about-timeline {
+    gap: 18px;
+  }
+
   .about-timeline::before {
-    left: 26px;
+    top: 24px;
+    bottom: 24px;
+    left: 25px;
+  }
+
+  .about-timeline__item {
+    grid-template-columns: 52px minmax(0, 1fr);
+    gap: 14px 16px;
+    padding: 0 0 30px;
+  }
+
+  .about-timeline__item span {
+    width: 52px;
+    height: 52px;
+  }
+
+  .about-timeline__item > div {
+    grid-column: 2;
+    padding: 16px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.76);
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
   }
 
   .about-timeline__item img {
-    width: 100%;
-    max-width: 180px;
+    grid-column: 2;
+    grid-row: 1;
+    width: 72px;
+    border-radius: 18px;
+    padding: 10px;
+  }
+
+  .about-timeline__item h3 {
+    font-size: clamp(1.12rem, 5.4vw, 1.42rem);
+    line-height: 1.16;
+  }
+
+  .about-timeline__item p {
+    font-size: 0.96rem;
+    line-height: 1.66;
   }
 
   .about-gallery__item--1,
@@ -917,6 +966,64 @@
   .about-final-cta__actions {
     align-items: stretch;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 520px) {
+  .about-story__parts article {
+    padding-left: 18px;
+  }
+
+  .about-section {
+    padding-top: 78px;
+    padding-bottom: 78px;
+  }
+
+  .about-timeline__item {
+    grid-template-columns: 46px minmax(0, 1fr);
+    gap: 12px;
+    padding-bottom: 26px;
+  }
+
+  .about-timeline::before {
+    left: 22px;
+  }
+
+  .about-timeline__item span {
+    width: 46px;
+    height: 46px;
+    font-size: 0.72rem;
+  }
+
+  .about-timeline__item img {
+    width: 64px;
+  }
+
+  .about-timeline__item > div {
+    padding: 15px;
+    border-radius: 20px;
+  }
+
+  .about-ceo {
+    border-radius: 28px;
+  }
+
+  .about-ceo__portrait {
+    border-radius: 24px;
+  }
+}
+
+@media (max-width: 380px) {
+  .about-page {
+    --about-x: 16px;
+  }
+
+  .about-hero__title {
+    font-size: clamp(2.1rem, 10.8vw, 3.45rem);
+  }
+
+  .about-timeline__item > div {
+    padding: 14px;
   }
 }
 

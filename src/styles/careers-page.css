@@ -14,6 +14,18 @@
   background: var(--careers-dark);
 }
 
+.careers-page *,
+.careers-page *::before,
+.careers-page *::after {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.careers-page img {
+  display: block;
+  max-width: 100%;
+}
+
 .careers-page-hero,
 .careers-page-section,
 .careers-page-life,
@@ -102,6 +114,7 @@
   position: relative;
   display: grid;
   gap: 18px;
+  width: 100%;
 }
 
 .careers-page-hero__visual img {
@@ -221,6 +234,7 @@
 .careers-page-cta h2 {
   font-size: clamp(2.12rem, 4.35vw, 4.6rem);
   line-height: 0.98;
+  overflow-wrap: anywhere;
 }
 
 .careers-page > .careers-page-section:nth-of-type(2) .careers-page__eyebrow,
@@ -313,6 +327,7 @@
   color: #111827;
   font-size: clamp(1.2rem, 1.7vw, 1.65rem);
   font-weight: 850;
+  overflow-wrap: anywhere;
 }
 
 .careers-page-love__item h3,
@@ -321,6 +336,7 @@
   color: #ffffff;
   font-size: clamp(1.2rem, 1.7vw, 1.65rem);
   font-weight: 850;
+  overflow-wrap: anywhere;
 }
 
 .careers-page-feature p,
@@ -375,6 +391,10 @@
   box-shadow: 0 30px 84px rgba(0, 0, 0, 0.28);
 }
 
+.careers-page-life__content {
+  width: 100%;
+}
+
 .careers-page-life__media img {
   width: 100%;
   aspect-ratio: 1.28;
@@ -402,6 +422,7 @@
 .careers-page-life__content li {
   padding: 9px 13px;
   color: var(--careers-blue-soft);
+  overflow-wrap: anywhere;
 }
 
 .careers-page-process__list {
@@ -516,6 +537,7 @@
 .careers-page-love__item p {
   margin-right: 28px;
   margin-left: 28px;
+  overflow-wrap: anywhere;
 }
 
 .careers-page-love__item h3 {
@@ -631,7 +653,9 @@
   }
 
   .careers-page-hero__visual {
+    width: min(100%, 760px);
     max-width: 760px;
+    justify-self: center;
   }
 
   .careers-page-feature-grid,
@@ -657,11 +681,41 @@
 
   .careers-page-hero {
     min-height: auto;
-    padding-top: 128px;
+    gap: 34px;
+    padding-top: 118px;
+    padding-bottom: 74px;
   }
 
   .careers-page-hero__title {
+    max-width: 11ch;
     font-size: clamp(2.35rem, 11.8vw, 4.25rem);
+    line-height: 1;
+  }
+
+  .careers-page-hero__description {
+    max-width: none;
+    margin-top: 22px;
+    font-size: 1rem;
+    line-height: 1.68;
+  }
+
+  .careers-page-section,
+  .careers-page-process,
+  .careers-page-love,
+  .careers-page-faq {
+    padding-top: 76px;
+    padding-bottom: 82px;
+  }
+
+  .careers-page-section__intro {
+    margin-bottom: 34px;
+  }
+
+  .careers-page-section__intro h2,
+  .careers-page-life__content h2,
+  .careers-page-cta h2 {
+    font-size: clamp(2rem, 9.4vw, 3rem);
+    line-height: 1.06;
   }
 
   .careers-page-feature-grid,
@@ -670,16 +724,55 @@
   .careers-page-process__list,
   .careers-page-job dl {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .careers-page-hero__visual img,
   .careers-page-hero__visual img:nth-child(3) {
     width: 100%;
+    border-radius: 24px;
   }
 
   .careers-page-hero__visual img:nth-child(2),
   .careers-page-hero__visual img:nth-child(3) {
+    justify-self: stretch;
     margin-top: 0;
+  }
+
+  .careers-page-feature,
+  .careers-page-benefit {
+    padding: 22px;
+  }
+
+  .careers-page-feature__icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 18px;
+    border-radius: 16px;
+  }
+
+  .careers-page-feature h3,
+  .careers-page-benefit h3,
+  .careers-page-love__item h3,
+  .careers-page-process__step h3 {
+    font-size: 1.22rem;
+    line-height: 1.2;
+  }
+
+  .careers-page-feature p,
+  .careers-page-benefit p,
+  .careers-page-love__item p,
+  .careers-page-process__step p,
+  .careers-page-life__content p,
+  .careers-page-faq__item p {
+    font-size: 0.98rem;
+    line-height: 1.64;
+  }
+
+  .careers-page-life {
+    gap: 30px;
+    padding-top: clamp(178px, 36vw, 230px);
+    padding-bottom: 82px;
   }
 
   .careers-page-life__media,
@@ -691,14 +784,137 @@
     border-radius: 24px;
   }
 
+  .careers-page-life__media img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .careers-page-life__content ul {
+    margin-top: 22px;
+    gap: 8px;
+  }
+
+  .careers-page-life__content li {
+    max-width: 100%;
+    padding: 8px 11px;
+    font-size: 0.78rem;
+  }
+
+  .careers-page-love__item h3,
+  .careers-page-love__item p {
+    margin-right: 22px;
+    margin-left: 22px;
+  }
+
+  .careers-page-love__item h3 {
+    margin-top: 22px;
+  }
+
+  .careers-page-love__item p {
+    margin-bottom: 24px;
+  }
+
+  .careers-page-process__step {
+    min-height: auto;
+    padding: 22px;
+  }
+
+  .careers-page-process__step span {
+    margin-bottom: 24px;
+  }
+
+  .careers-page-faq__list {
+    gap: 10px;
+  }
+
+  .careers-page-faq__item button {
+    gap: 14px;
+    padding: 18px;
+    font-size: 0.98rem;
+    line-height: 1.35;
+  }
+
+  .careers-page-faq__item p {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .careers-page-faq__item--active p {
+    padding-bottom: 18px;
+  }
+
+  .careers-page-cta {
+    width: calc(100% - 36px);
+    margin-top: 74px;
+    margin-bottom: 84px;
+    padding: 34px 18px;
+  }
+
   .careers-page-cta__actions {
     align-items: stretch;
     flex-direction: column;
+    gap: 12px;
   }
 
   .careers-page__primary,
   .careers-page__link {
     width: 100%;
+    min-height: 52px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .careers-page {
+    --careers-x: 14px;
+  }
+
+  .careers-page-hero {
+    padding-top: 108px;
+    padding-bottom: 64px;
+  }
+
+  .careers-page-hero__title {
+    font-size: clamp(2.08rem, 12vw, 2.95rem);
+  }
+
+  .careers-page-section,
+  .careers-page-process,
+  .careers-page-love,
+  .careers-page-faq {
+    padding-top: 64px;
+    padding-bottom: 70px;
+  }
+
+  .careers-page-section__intro h2,
+  .careers-page-life__content h2,
+  .careers-page-cta h2 {
+    font-size: clamp(1.84rem, 10.4vw, 2.54rem);
+  }
+
+  .careers-page-feature,
+  .careers-page-benefit,
+  .careers-page-process__step {
+    padding: 20px;
+  }
+
+  .careers-page-life {
+    padding-top: 164px;
+  }
+
+  .careers-page-life__media,
+  .careers-page-feature,
+  .careers-page-benefit,
+  .careers-page-love__item,
+  .careers-page-job,
+  .careers-page-cta,
+  .careers-page-faq__item {
+    border-radius: 20px;
+  }
+
+  .careers-page-love__item h3,
+  .careers-page-love__item p {
+    margin-right: 18px;
+    margin-left: 18px;
   }
 }
 

@@ -20,9 +20,9 @@ Please let me know how we can get started.`,
   },
   position: {
     side: 'right',
-    desktopBottom: '124px',
-    mobileBottom: '112px',
-    gapFromAiAssistant: '18px',
+    desktopBottom: 'calc(clamp(18px, 2.4vw, 30px) + 86px)',
+    mobileBottom: '90px',
+    gapFromAiAssistant: '12px',
   },
   analyticsKey: 'stackneuro_whatsapp_widget_analytics',
 };

@@ -1,10 +1,4 @@
-import featuredAiCover from '../assets/illustrations/insight-featured-ai.svg';
-import aiCover from '../assets/illustrations/insight-ai.svg';
-import engineeringCover from '../assets/illustrations/insight-engineering.svg';
-import cloudCover from '../assets/illustrations/insight-cloud.svg';
-import securityCover from '../assets/illustrations/insight-security.svg';
-import designCover from '../assets/illustrations/insight-design.svg';
-import transformationCover from '../assets/illustrations/insight-transformation.svg';
+import { realImages } from './realImages';
 
 export const insightsIntro = {
   eyebrow: 'Insights & Resources',
@@ -42,8 +36,8 @@ export const featuredInsight = {
     },
   ],
   image: {
-    src: featuredAiCover,
-    alt: 'AI ecosystem illustration for a featured engineering article',
+    src: realImages.aiWorkspace,
+    alt: 'Professional AI workspace for a featured technology article',
   },
 };
 
@@ -72,7 +66,7 @@ export const latestInsights = [
         body: 'Strong AI experiences create confidence by offering clear escalation paths, transparent answers and ongoing measurement.',
       },
     ],
-    image: { src: aiCover, alt: 'AI assistant network article cover' },
+    image: { src: realImages.aiWorkspace, alt: 'AI product workspace article cover' },
   },
   {
     slug: 'maintainable-software-decisions',
@@ -98,7 +92,7 @@ export const latestInsights = [
         body: 'Testing, documentation and thoughtful reviews protect product momentum and make future improvements easier to deliver.',
       },
     ],
-    image: { src: engineeringCover, alt: 'Software engineering workspace article cover' },
+    image: { src: realImages.softwareDevelopment, alt: 'Software engineering workspace article cover' },
   },
   {
     slug: 'cloud-platforms-scale-confidence',
@@ -124,7 +118,7 @@ export const latestInsights = [
         body: 'A strong cloud foundation makes it easier to add new products, users and integrations without disrupting the business.',
       },
     ],
-    image: { src: cloudCover, alt: 'Cloud infrastructure article cover' },
+    image: { src: realImages.cloudArticle, alt: 'Cloud infrastructure article cover' },
   },
   {
     slug: 'security-before-first-deployment',
@@ -150,7 +144,7 @@ export const latestInsights = [
         body: 'Security requires continuous improvement, monitoring and careful response as products and businesses grow.',
       },
     ],
-    image: { src: securityCover, alt: 'Cybersecurity shield article cover' },
+    image: { src: realImages.cybersecurity, alt: 'Cybersecurity operations article cover' },
   },
   {
     slug: 'enterprise-interfaces-people-use',
@@ -176,7 +170,7 @@ export const latestInsights = [
         body: 'Better user experience improves adoption, training time and the overall return on digital product investment.',
       },
     ],
-    image: { src: designCover, alt: 'UI UX design system article cover' },
+    image: { src: realImages.designArticle, alt: 'UI UX design workspace article cover' },
   },
   {
     slug: 'connected-business-processes',
@@ -202,7 +196,7 @@ export const latestInsights = [
         body: 'The best transformation initiatives connect technology decisions to specific business improvements and long-term growth.',
       },
     ],
-    image: { src: transformationCover, alt: 'Digital transformation workflow article cover' },
+    image: { src: realImages.consulting, alt: 'Digital transformation strategy article cover' },
   },
 ];
 

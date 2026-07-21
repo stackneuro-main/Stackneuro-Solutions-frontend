@@ -1,10 +1,4 @@
-import discoverIllustration from '../assets/illustrations/process-discover.svg';
-import strategyIllustration from '../assets/illustrations/process-strategy.svg';
-import designIllustration from '../assets/illustrations/process-design.svg';
-import developmentIllustration from '../assets/illustrations/process-development.svg';
-import testingIllustration from '../assets/illustrations/process-testing.svg';
-import deploymentIllustration from '../assets/illustrations/process-deployment.svg';
-import growthIllustration from '../assets/illustrations/process-growth.svg';
+import { realImages } from './realImages';
 
 export const processIntro = {
   eyebrow: 'Our Process',
@@ -21,8 +15,8 @@ export const processSteps = [
     description: 'Understand business goals, users, market opportunities and project requirements.',
     deliverables: ['Business Requirements', 'Research', 'Roadmap'],
     image: {
-      src: discoverIllustration,
-      alt: 'Business discovery and research illustration',
+      src: realImages.teamWorkshop,
+      alt: 'Business discovery workshop with a professional strategy team',
     },
     align: 'left',
   },
@@ -33,8 +27,8 @@ export const processSteps = [
     description: 'Define technical architecture, timelines and implementation approach.',
     deliverables: ['Architecture', 'Planning', 'Milestones'],
     image: {
-      src: strategyIllustration,
-      alt: 'Architecture strategy blueprint illustration',
+      src: realImages.consulting,
+      alt: 'Business strategy presentation for product architecture planning',
     },
     align: 'right',
   },
@@ -45,8 +39,8 @@ export const processSteps = [
     description: 'Craft intuitive user experiences and modern interface systems.',
     deliverables: ['Wireframes', 'UI Design', 'Prototype'],
     image: {
-      src: designIllustration,
-      alt: 'UI and UX design workspace illustration',
+      src: realImages.productDesign,
+      alt: 'UI and UX design workshop with product planning materials',
     },
     align: 'left',
   },
@@ -57,8 +51,8 @@ export const processSteps = [
     description: 'Transform designs into scalable software using modern technologies.',
     deliverables: ['Frontend', 'Backend', 'API', 'Database'],
     image: {
-      src: developmentIllustration,
-      alt: 'Software development code editor illustration',
+      src: realImages.softwareDevelopment,
+      alt: 'Software developer working on a modern digital product',
     },
     align: 'right',
   },
@@ -69,8 +63,8 @@ export const processSteps = [
     description: 'Ensure reliability, security and performance before release.',
     deliverables: ['QA', 'Performance', 'Security'],
     image: {
-      src: testingIllustration,
-      alt: 'Testing and quality assurance dashboard illustration',
+      src: realImages.qaTesting,
+      alt: 'Quality assurance dashboard reviewed on a professional workstation',
     },
     align: 'left',
   },
@@ -81,8 +75,8 @@ export const processSteps = [
     description: 'Deploy to production with cloud infrastructure and continuous delivery.',
     deliverables: ['Cloud', 'CI/CD', 'Monitoring'],
     image: {
-      src: deploymentIllustration,
-      alt: 'Cloud deployment and CI/CD illustration',
+      src: realImages.cloudOperations,
+      alt: 'Cloud deployment operations workspace with technology monitors',
     },
     align: 'right',
   },
@@ -93,8 +87,8 @@ export const processSteps = [
     description: 'Provide ongoing improvements, maintenance and long-term partnership.',
     deliverables: ['Analytics', 'Optimization', 'Support'],
     image: {
-      src: growthIllustration,
-      alt: 'Growth analytics and long-term support illustration',
+      src: realImages.businessGrowth,
+      alt: 'Business growth analytics reviewed by a professional team',
     },
     align: 'left',
   },

@@ -1,9 +1,4 @@
-import innovationIllustration from '../assets/illustrations/why-innovation.svg';
-import qualityIllustration from '../assets/illustrations/why-quality.svg';
-import transparencyIllustration from '../assets/illustrations/why-transparency.svg';
-import securityIllustration from '../assets/illustrations/why-security.svg';
-import scalabilityIllustration from '../assets/illustrations/why-scalability.svg';
-import supportIllustration from '../assets/illustrations/why-support.svg';
+import { realImages } from './realImages';
 
 export const whyStackneuroIntro = {
   eyebrow: 'Why Stackneuro',
@@ -19,8 +14,8 @@ export const whyStackneuroValues = [
     title: 'Innovation',
     description: 'Building future-ready digital products using modern technology.',
     image: {
-      src: innovationIllustration,
-      alt: 'Abstract AI network illustration representing innovation',
+      src: realImages.innovationLab,
+      alt: 'Professional technology team collaborating in an innovation workspace',
     },
   },
   {
@@ -30,8 +25,8 @@ export const whyStackneuroValues = [
     description:
       'Engineering solutions that prioritize reliability, maintainability, and performance.',
     image: {
-      src: qualityIllustration,
-      alt: 'Premium engineering dashboard illustration representing quality',
+      src: realImages.softwareDevelopment,
+      alt: 'Engineer reviewing software quality on a professional workstation',
     },
   },
   {
@@ -40,8 +35,8 @@ export const whyStackneuroValues = [
     title: 'Transparency',
     description: 'Clear communication throughout every stage of the project lifecycle.',
     image: {
-      src: transparencyIllustration,
-      alt: 'Workflow visualization illustration representing transparent communication',
+      src: realImages.teamWorkshop,
+      alt: 'Team planning session showing transparent project communication',
     },
   },
   {
@@ -51,8 +46,8 @@ export const whyStackneuroValues = [
     description:
       'Security-first development practices integrated from planning through deployment.',
     image: {
-      src: securityIllustration,
-      alt: 'Cybersecurity shield illustration representing secure development practices',
+      src: realImages.cybersecurity,
+      alt: 'Cybersecurity operations workspace representing secure development practices',
     },
   },
   {
@@ -61,8 +56,8 @@ export const whyStackneuroValues = [
     title: 'Scalability',
     description: 'Solutions designed to grow alongside evolving business needs.',
     image: {
-      src: scalabilityIllustration,
-      alt: 'Cloud infrastructure illustration representing scalable systems',
+      src: realImages.cloudOperations,
+      alt: 'Modern cloud operations workspace representing scalable systems',
     },
   },
   {
@@ -72,8 +67,8 @@ export const whyStackneuroValues = [
     description:
       'Continuous improvements, maintenance, and partnership beyond project delivery.',
     image: {
-      src: supportIllustration,
-      alt: 'Long-term partnership illustration representing ongoing support',
+      src: realImages.supportTeam,
+      alt: 'Business partners collaborating during a long-term support discussion',
     },
   },
 ];

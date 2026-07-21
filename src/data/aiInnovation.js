@@ -1,9 +1,4 @@
-import aiAssistantsIllustration from '../assets/illustrations/ai-assistants.svg';
-import aiAutomationIllustration from '../assets/illustrations/ai-automation.svg';
-import aiAnalyticsIllustration from '../assets/illustrations/ai-analytics.svg';
-import aiVisionIllustration from '../assets/illustrations/ai-vision.svg';
-import aiGenerativeIllustration from '../assets/illustrations/ai-generative.svg';
-import aiCustomIllustration from '../assets/illustrations/ai-custom.svg';
+import { realImages } from './realImages';
 
 export const aiInnovationIntro = {
   eyebrow: 'AI & Innovation',
@@ -22,8 +17,8 @@ export const aiCapabilities = [
       'Build conversational assistants that improve customer engagement and automate support.',
     benefits: ['Faster customer support', '24/7 availability', 'Reduced operational costs'],
     image: {
-      src: aiAssistantsIllustration,
-      alt: 'AI assistant conversation interface illustration',
+      src: realImages.aiWorkspace,
+      alt: 'Professional AI workspace with intelligent product planning',
     },
   },
   {
@@ -34,8 +29,8 @@ export const aiCapabilities = [
     description: 'Automate repetitive business processes using AI-driven workflows.',
     benefits: ['Less manual effort', 'Consistent operations', 'Faster process cycles'],
     image: {
-      src: aiAutomationIllustration,
-      alt: 'AI-driven workflow automation illustration',
+      src: realImages.automation,
+      alt: 'Technology automation lab representing intelligent workflow systems',
     },
   },
   {
@@ -47,8 +42,8 @@ export const aiCapabilities = [
       'Transform business data into actionable insights using intelligent prediction models.',
     benefits: ['Smarter forecasting', 'Data-led decisions', 'Earlier risk detection'],
     image: {
-      src: aiAnalyticsIllustration,
-      alt: 'Predictive analytics dashboard illustration',
+      src: realImages.analytics,
+      alt: 'Business analytics dashboard reviewed by a professional team',
     },
   },
   {
@@ -60,8 +55,8 @@ export const aiCapabilities = [
       'Enable systems to understand and process images, documents and visual information.',
     benefits: ['Document intelligence', 'Visual recognition', 'Quality inspection workflows'],
     image: {
-      src: aiVisionIllustration,
-      alt: 'Computer vision recognition interface illustration',
+      src: realImages.computerVision,
+      alt: 'Modern computer vision and immersive technology workspace',
     },
   },
   {
@@ -73,8 +68,8 @@ export const aiCapabilities = [
       'Create intelligent content generation, summarization and recommendation systems.',
     benefits: ['Content acceleration', 'Knowledge summarization', 'Personalized recommendations'],
     image: {
-      src: aiGenerativeIllustration,
-      alt: 'Generative AI creative workspace illustration',
+      src: realImages.generativeAi,
+      alt: 'Creative professional workspace representing generative AI innovation',
     },
   },
   {
@@ -85,8 +80,8 @@ export const aiCapabilities = [
     description: 'Design AI products tailored to unique business challenges and opportunities.',
     benefits: ['Business-specific models', 'Integrated workflows', 'Scalable AI products'],
     image: {
-      src: aiCustomIllustration,
-      alt: 'Custom connected AI ecosystem illustration',
+      src: realImages.customAi,
+      alt: 'Modern technology operations workspace representing custom AI solutions',
     },
   },
 ];

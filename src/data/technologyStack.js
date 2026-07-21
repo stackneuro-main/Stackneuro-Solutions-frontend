@@ -1,11 +1,4 @@
-import automationIllustration from '../assets/illustrations/ai-automation.svg';
-import customAiIllustration from '../assets/illustrations/ai-custom.svg';
-import cultureIllustration from '../assets/illustrations/careers-culture-workspace.svg';
-import enterpriseIllustration from '../assets/illustrations/industry-enterprise.svg';
-import growthIllustration from '../assets/illustrations/process-growth.svg';
-import productDesignIllustration from '../assets/illustrations/process-design.svg';
-import supportIllustration from '../assets/illustrations/why-support.svg';
-import transformationIllustration from '../assets/illustrations/insight-transformation.svg';
+import { realImages } from './realImages';
 
 export const technologyStackIntro = {
   eyebrow: 'Our Capabilities',
@@ -24,8 +17,8 @@ export const technologyCategories = [
     badges: ['Innovation'],
     outcomes: ['Tailored Solutions', 'Future Scalability', 'Operational Efficiency'],
     image: {
-      src: customAiIllustration,
-      alt: 'Digital transformation illustration representing tailored business software',
+      src: realImages.softwareDevelopment,
+      alt: 'Software professional building tailored business software on a workstation',
     },
   },
   {
@@ -37,8 +30,8 @@ export const technologyCategories = [
     badges: ['Enterprise'],
     outcomes: ['Process Optimization', 'Team Collaboration', 'Centralized Operations'],
     image: {
-      src: enterpriseIllustration,
-      alt: 'Enterprise ecosystem illustration representing connected business operations',
+      src: realImages.enterpriseTeam,
+      alt: 'Enterprise team reviewing connected business operations in a meeting',
     },
   },
   {
@@ -50,8 +43,8 @@ export const technologyCategories = [
     badges: ['Automation'],
     outcomes: ['Intelligent Automation', 'Better Decisions', 'Increased Productivity'],
     image: {
-      src: automationIllustration,
-      alt: 'Automation workflow illustration representing intelligent business systems',
+      src: realImages.automation,
+      alt: 'Modern automation hardware and digital systems in a technology lab',
     },
   },
   {
@@ -63,8 +56,8 @@ export const technologyCategories = [
     badges: ['Experience'],
     outcomes: ['Mobile Engagement', 'Always-On Access', 'Customer Convenience'],
     image: {
-      src: cultureIllustration,
-      alt: 'Collaborative digital product illustration representing mobile experiences',
+      src: realImages.collaboration,
+      alt: 'Product team collaborating on mobile digital experiences',
     },
   },
   {
@@ -76,8 +69,8 @@ export const technologyCategories = [
     badges: ['Experience'],
     outcomes: ['Better Usability', 'Customer Experience', 'Product Clarity'],
     image: {
-      src: productDesignIllustration,
-      alt: 'Product design workspace illustration representing user-focused digital experiences',
+      src: realImages.productDesign,
+      alt: 'Design team planning user-focused digital product experiences',
     },
   },
   {
@@ -89,8 +82,8 @@ export const technologyCategories = [
     badges: ['Scalability'],
     outcomes: ['Secure Infrastructure', 'High Availability', 'Business Continuity'],
     image: {
-      src: growthIllustration,
-      alt: 'Growth dashboard illustration representing scalable digital infrastructure',
+      src: realImages.cloudOperations,
+      alt: 'Professional cloud operations workspace representing digital infrastructure',
     },
   },
   {
@@ -102,8 +95,8 @@ export const technologyCategories = [
     badges: ['Strategy'],
     outcomes: ['Digital Evolution', 'Business Growth', 'Process Modernization'],
     image: {
-      src: transformationIllustration,
-      alt: 'Transformation illustration representing business modernization and innovation',
+      src: realImages.consulting,
+      alt: 'Business strategy presentation representing digital transformation',
     },
   },
   {
@@ -115,8 +108,8 @@ export const technologyCategories = [
     badges: ['Support'],
     outcomes: ['Long-Term Partnership', 'Continuous Improvement', 'Reliable Performance'],
     image: {
-      src: supportIllustration,
-      alt: 'Support illustration representing continuous improvement and long-term partnership',
+      src: realImages.supportTeam,
+      alt: 'Client partnership meeting representing continuous improvement and support',
     },
   },
 ];

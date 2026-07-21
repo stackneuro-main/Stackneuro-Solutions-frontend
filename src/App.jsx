@@ -91,8 +91,6 @@ function App() {
     const mobileQuery = window.matchMedia('(max-width: 720px)');
     const reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
     const scrollableSelectors = [
-      '.services-category__cards',
-      '.contact-section__cards',
       '.services-page-grid',
       '.services-page-expect__grid',
       '.work-page-projects',
@@ -102,12 +100,6 @@ function App() {
       '.about-team',
       '.about-testimonials',
       '.about-achievements',
-      '.blog-page-grid',
-      '.blog-page-topics__grid',
-      '.careers-page-feature-grid',
-      '.careers-page-benefits',
-      '.careers-page-love__grid',
-      '.careers-page-process__list',
     ].join(',');
     const revealSelectors = [
       '.service-card',

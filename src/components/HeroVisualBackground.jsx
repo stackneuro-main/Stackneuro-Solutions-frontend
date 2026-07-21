@@ -1,4 +1,4 @@
-import heroBackground from '../assets/images/hero-abstract-technology.png';
+import { realImages } from '../data/realImages';
 
 function HeroVisualBackground() {
   return (
@@ -6,7 +6,7 @@ function HeroVisualBackground() {
       <div className="hero__media">
         <img
           className="hero__image"
-          src={heroBackground}
+          src={realImages.heroTechnology}
           alt=""
           loading="eager"
           decoding="async"

@@ -1,10 +1,4 @@
-import cultureWorkspace from '../assets/illustrations/careers-culture-workspace.svg';
-import processDesign from '../assets/illustrations/process-design.svg';
-import processDevelopment from '../assets/illustrations/process-development.svg';
-import processDiscover from '../assets/illustrations/process-discover.svg';
-import processGrowth from '../assets/illustrations/process-growth.svg';
-import techAi from '../assets/illustrations/tech-ai.svg';
-import techCloud from '../assets/illustrations/tech-cloud.svg';
+import { realImages } from './realImages';
 
 export const careersPageHero = {
   eyebrow: 'Careers at Stackneuro',
@@ -47,8 +41,8 @@ export const careersLife = {
   description:
     'Our environment is shaped around curiosity, ownership and collaboration. We solve meaningful client challenges, learn continuously and support each other while building products that are reliable, elegant and ready to scale.',
   image: {
-    src: cultureWorkspace,
-    alt: 'Collaborative technology workspace illustration',
+    src: realImages.officeCulture,
+    alt: 'Collaborative technology team working in a modern office',
   },
   highlights: ['Innovation-driven mindset', 'Customer-first thinking', 'Clear communication', 'Strong engineering craft'],
 };
@@ -66,20 +60,20 @@ export const careersLove = [
   {
     title: 'Office Environment',
     description: 'A calm, modern setup designed for focus, teamwork and meaningful problem solving.',
-    image: processDesign,
-    alt: 'Modern design workspace illustration',
+    image: realImages.workplace,
+    alt: 'Modern office environment designed for focused teamwork',
   },
   {
     title: 'Learning Culture',
     description: 'A team rhythm built around asking better questions, sharing knowledge and improving every cycle.',
-    image: techAi,
-    alt: 'Artificial intelligence learning ecosystem illustration',
+    image: realImages.learningSession,
+    alt: 'Professional team learning session in a collaborative workspace',
   },
   {
     title: 'Team Values',
     description: 'People who care about clarity, accountability, technical quality and long-term relationships.',
-    image: processGrowth,
-    alt: 'Growth and support dashboard illustration',
+    image: realImages.collaboration,
+    alt: 'Team members collaborating around shared values and product quality',
   },
 ];
 
@@ -116,4 +110,8 @@ export const careersFaqs = [
   },
 ];
 
-export const careersHeroVisuals = [processDiscover, processDevelopment, techCloud];
+export const careersHeroVisuals = [
+  realImages.teamWorkshop,
+  realImages.softwareDevelopment,
+  realImages.cloudOperations,
+];

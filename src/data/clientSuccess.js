@@ -1,11 +1,4 @@
-import avatar01 from '../assets/illustrations/client-avatar-01.svg';
-import avatar02 from '../assets/illustrations/client-avatar-02.svg';
-import avatar03 from '../assets/illustrations/client-avatar-03.svg';
-import avatar04 from '../assets/illustrations/client-avatar-04.svg';
-import avatar05 from '../assets/illustrations/client-avatar-05.svg';
-import avatar06 from '../assets/illustrations/client-avatar-06.svg';
-import avatar07 from '../assets/illustrations/client-avatar-07.svg';
-import avatar08 from '../assets/illustrations/client-avatar-08.svg';
+import { realPortraits } from './realImages';
 
 export const clientSuccessIntro = {
   eyebrow: 'Client Success Stories',
@@ -28,7 +21,7 @@ export const clientTestimonials = [
     rating: 5,
     review:
       'Their team understood our workflows quickly and delivered a platform that made operations measurably faster.',
-    avatar: { src: avatar01, alt: 'Avatar of Aarav Mehta' },
+    avatar: { src: realPortraits.avatar01, alt: 'Portrait of Aarav Mehta' },
   },
   {
     name: 'Sophia Grant',
@@ -37,7 +30,7 @@ export const clientTestimonials = [
     rating: 5,
     review:
       'Stackneuro brought strong engineering discipline to a complex financial product without slowing the business down.',
-    avatar: { src: avatar02, alt: 'Avatar of Sophia Grant' },
+    avatar: { src: realPortraits.avatar02, alt: 'Portrait of Sophia Grant' },
   },
   {
     name: 'Daniel Reed',
@@ -46,7 +39,7 @@ export const clientTestimonials = [
     rating: 5,
     review:
       'The new commerce experience improved performance, simplified checkout and gave our team better customer visibility.',
-    avatar: { src: avatar03, alt: 'Avatar of Daniel Reed' },
+    avatar: { src: realPortraits.avatar03, alt: 'Portrait of Daniel Reed' },
   },
   {
     name: 'Maya Collins',
@@ -55,7 +48,7 @@ export const clientTestimonials = [
     rating: 5,
     review:
       'They created a learning platform that felt polished from day one and remained easy for our administrators to manage.',
-    avatar: { src: avatar04, alt: 'Avatar of Maya Collins' },
+    avatar: { src: realPortraits.avatar04, alt: 'Portrait of Maya Collins' },
   },
   {
     name: 'Rohan Kapoor',
@@ -64,7 +57,7 @@ export const clientTestimonials = [
     rating: 5,
     review:
       'The architecture decisions were practical, scalable and clearly explained throughout the project.',
-    avatar: { src: avatar05, alt: 'Avatar of Rohan Kapoor' },
+    avatar: { src: realPortraits.avatar05, alt: 'Portrait of Rohan Kapoor' },
   },
   {
     name: 'Elena Torres',
@@ -73,7 +66,7 @@ export const clientTestimonials = [
     rating: 5,
     review:
       'Their automation work helped us connect production data, reduce manual reporting and make faster decisions.',
-    avatar: { src: avatar06, alt: 'Avatar of Elena Torres' },
+    avatar: { src: realPortraits.avatar06, alt: 'Portrait of Elena Torres' },
   },
   {
     name: 'Noah Bennett',
@@ -82,7 +75,7 @@ export const clientTestimonials = [
     rating: 5,
     review:
       'We needed a reliable MVP partner. Stackneuro helped us move quickly while still building a product we could scale.',
-    avatar: { src: avatar07, alt: 'Avatar of Noah Bennett' },
+    avatar: { src: realPortraits.avatar07, alt: 'Portrait of Noah Bennett' },
   },
   {
     name: 'Priya Nair',
@@ -91,6 +84,6 @@ export const clientTestimonials = [
     rating: 5,
     review:
       'The collaboration was structured, transparent and focused on long-term business value from the beginning.',
-    avatar: { src: avatar08, alt: 'Avatar of Priya Nair' },
+    avatar: { src: realPortraits.avatar08, alt: 'Portrait of Priya Nair' },
   },
 ];
