@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="560" viewBox="0 0 760 560" role="img" aria-labelledby="title desc">
+  <title id="title">Transparent project workflow illustration</title>
+  <desc id="desc">A collaborative project workflow with connected planning, review, and delivery stages.</desc>
+  <rect width="760" height="560" rx="40" fill="#fafafa"/>
+  <rect x="88" y="92" width="584" height="376" rx="34" fill="#fff" stroke="#d8e0ea" stroke-width="2"/>
+  <path d="M154 176h168M154 208h104M462 176h144M462 208h92" stroke="#c4cfdc" stroke-width="8" stroke-linecap="round"/>
+  <g fill="#f4f7fb" stroke="#d8e0ea" stroke-width="2">
+    <rect x="126" y="270" width="128" height="84" rx="22"/>
+    <rect x="316" y="230" width="128" height="84" rx="22"/>
+    <rect x="506" y="270" width="128" height="84" rx="22"/>
+    <rect x="316" y="376" width="128" height="66" rx="22"/>
+  </g>
+  <g stroke="#1f7bff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M254 312c38-2 43-50 62-52"/>
+    <path d="M444 272c36 1 43 40 62 40"/>
+    <path d="M380 314v62"/>
+  </g>
+  <g fill="#1f7bff">
+    <circle cx="190" cy="312" r="12"/>
+    <circle cx="380" cy="272" r="12"/>
+    <circle cx="570" cy="312" r="12"/>
+    <circle cx="380" cy="410" r="10"/>
+  </g>
+  <g stroke="#7f96ad" stroke-width="7" stroke-linecap="round">
+    <path d="M160 334h62"/>
+    <path d="M350 294h60"/>
+    <path d="M540 334h62"/>
+    <path d="M350 430h60"/>
+  </g>
+</svg>

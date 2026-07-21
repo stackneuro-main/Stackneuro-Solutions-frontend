@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
+  <title id="title">Modern browser interface illustration</title>
+  <desc id="desc">A responsive browser UI with interface panels and component layouts.</desc>
+  <rect width="760" height="520" rx="36" fill="#111c31"/>
+  <rect x="86" y="76" width="588" height="368" rx="28" fill="#0b1120" stroke="#263856" stroke-width="2"/>
+  <rect x="86" y="76" width="588" height="62" rx="28" fill="#18263f"/>
+  <circle cx="126" cy="107" r="7" fill="#6ea7ff"/>
+  <circle cx="152" cy="107" r="7" fill="#8d7cff"/>
+  <circle cx="178" cy="107" r="7" fill="#22c3d6"/>
+  <rect x="220" y="94" width="300" height="26" rx="13" fill="#0f172a" stroke="#32476a"/>
+  <g fill="#142139" stroke="#2a3e60" stroke-width="2">
+    <rect x="126" y="178" width="182" height="210" rx="22"/>
+    <rect x="336" y="178" width="278" height="90" rx="22"/>
+    <rect x="336" y="296" width="124" height="92" rx="22"/>
+    <rect x="490" y="296" width="124" height="92" rx="22"/>
+  </g>
+  <path d="M156 222h118M156 252h80M364 222h214M364 246h136M364 336h66M520 336h66" stroke="#8ba4c8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M156 326h112" stroke="#2d82ff" stroke-width="10" stroke-linecap="round"/>
+  <path d="M366 344l34-34 34 34M522 310h64v64h-64z" fill="none" stroke="#2d82ff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

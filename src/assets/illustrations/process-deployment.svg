@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
+  <title id="title">Cloud deployment and CI/CD illustration</title>
+  <desc id="desc">Cloud deployment pipeline with CI/CD stages and monitoring nodes.</desc>
+  <rect width="760" height="520" rx="36" fill="#111c31"/>
+  <rect x="94" y="82" width="572" height="356" rx="30" fill="#0a0f1f" stroke="#263856" stroke-width="2"/>
+  <path d="M280 260c-50 0-88 34-88 78 0 45 38 78 88 78h220c50 0 90-33 90-78 0-43-34-76-82-78-15-72-76-120-150-120-60 0-110 31-138 82 22 7 43 20 60 38z" fill="#142139" stroke="#2a3e60" stroke-width="2"/>
+  <g stroke="#2d82ff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M380 282v70"/>
+    <path d="M380 352h-92v50"/>
+    <path d="M380 352h92v50"/>
+  </g>
+  <g fill="#0f172a" stroke="#2a3e60" stroke-width="2">
+    <rect x="238" y="388" width="100" height="52" rx="18"/>
+    <rect x="330" y="410" width="100" height="52" rx="18"/>
+    <rect x="422" y="388" width="100" height="52" rx="18"/>
+    <rect x="132" y="128" width="152" height="48" rx="24"/>
+  </g>
+  <path d="M164 152h88M288 414h52M380 436h52M472 414h52" stroke="#8ba4c8" stroke-width="7" stroke-linecap="round"/>
+</svg>

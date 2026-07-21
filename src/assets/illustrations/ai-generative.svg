@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="560" viewBox="0 0 760 560" role="img" aria-labelledby="title desc">
+  <title id="title">Generative AI workspace illustration</title>
+  <desc id="desc">A creative AI workspace with prompt input, generated content panels, and recommendation modules.</desc>
+  <rect width="760" height="560" rx="42" fill="#f7f9fc"/>
+  <rect x="90" y="82" width="580" height="396" rx="34" fill="#fff" stroke="#d8e2ef" stroke-width="2"/>
+  <rect x="126" y="124" width="508" height="62" rx="24" fill="#0f172a"/>
+  <rect x="126" y="222" width="218" height="188" rx="28" fill="#f0f6ff" stroke="#d2deec"/>
+  <rect x="374" y="222" width="260" height="84" rx="24" fill="#f0f6ff" stroke="#d2deec"/>
+  <rect x="374" y="326" width="260" height="84" rx="24" fill="#f0f6ff" stroke="#d2deec"/>
+  <path d="M162 155h300" stroke="#8ba4c8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M546 155h48" stroke="#67b7ff" stroke-width="8" stroke-linecap="round"/>
+  <path d="M176 348l48-72 42 48 36-34" fill="none" stroke="#2d82ff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="256" cy="270" r="18" fill="#2d82ff"/>
+  <path d="M410 254h168M410 278h102M410 358h168M410 382h132" stroke="#7f95ad" stroke-width="8" stroke-linecap="round"/>
+  <path d="M160 442h216M160 464h142" stroke="#c4cfdb" stroke-width="8" stroke-linecap="round"/>
+</svg>

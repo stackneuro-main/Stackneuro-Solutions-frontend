@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="560" viewBox="0 0 760 560" role="img" aria-labelledby="title desc">
+  <title id="title">Custom AI ecosystem illustration</title>
+  <desc id="desc">A connected AI ecosystem tailored around a central business solution.</desc>
+  <rect width="760" height="560" rx="42" fill="#f7f9fc"/>
+  <rect x="90" y="82" width="580" height="396" rx="34" fill="#fff" stroke="#d8e2ef" stroke-width="2"/>
+  <circle cx="380" cy="280" r="74" fill="#0f172a"/>
+  <circle cx="380" cy="280" r="28" fill="#2d82ff"/>
+  <g stroke="#2d82ff" stroke-width="5" stroke-linecap="round">
+    <path d="M380 206v-70"/>
+    <path d="M380 354v70"/>
+    <path d="M306 280h-92"/>
+    <path d="M454 280h92"/>
+    <path d="M328 228l-62-62"/>
+    <path d="M432 332l62 62"/>
+  </g>
+  <g fill="#f0f6ff" stroke="#d2deec" stroke-width="2">
+    <rect x="318" y="112" width="124" height="56" rx="22"/>
+    <rect x="318" y="392" width="124" height="56" rx="22"/>
+    <rect x="124" y="252" width="124" height="56" rx="22"/>
+    <rect x="512" y="252" width="124" height="56" rx="22"/>
+    <rect x="168" y="136" width="124" height="56" rx="22"/>
+    <rect x="468" y="368" width="124" height="56" rx="22"/>
+  </g>
+  <path d="M348 140h64M348 420h64M154 280h64M542 280h64M198 164h64M498 396h64" stroke="#7f95ad" stroke-width="8" stroke-linecap="round"/>
+</svg>

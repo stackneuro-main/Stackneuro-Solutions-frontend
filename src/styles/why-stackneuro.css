@@ -1,0 +1,333 @@
+.why-stackneuro {
+  position: relative;
+  z-index: 5;
+  overflow: clip;
+  margin-top: -1px;
+  color: #111827;
+  background:
+    radial-gradient(circle at 1px 1px, rgba(17, 24, 39, 0.055) 1px, transparent 0) 0 0 / 28px 28px,
+    #fafafa;
+}
+
+.why-stackneuro__transition {
+  height: clamp(72px, 10vw, 128px);
+  background: linear-gradient(180deg, #050913 0%, #172033 48%, #fafafa 100%);
+}
+
+.why-stackneuro__inner {
+  width: min(100%, 1320px);
+  margin: 0 auto;
+  padding: clamp(58px, 8vw, 104px) clamp(20px, 5vw, 72px) clamp(88px, 12vw, 150px);
+}
+
+.why-stackneuro__intro {
+  max-width: 940px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.why-stackneuro__eyebrow {
+  margin: 0 0 18px;
+  color: #1f65c8;
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.why-stackneuro__title {
+  max-width: 920px;
+  margin: 0 auto;
+  color: #0b1220;
+  font-size: clamp(2.35rem, 5.05vw, 5.3rem);
+  font-weight: 850;
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.why-stackneuro__description {
+  max-width: 760px;
+  margin: 26px auto 0;
+  color: rgba(17, 24, 39, 0.64);
+  font-size: clamp(1rem, 1.35vw, 1.16rem);
+  line-height: 1.72;
+}
+
+.why-stackneuro__experience {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(52px, 8vw, 112px);
+  margin-top: clamp(72px, 10vw, 132px);
+}
+
+.why-stackneuro__values {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.why-stackneuro__values::after {
+  display: block;
+  min-height: clamp(240px, 52vh, 520px);
+  content: "";
+}
+
+.why-value {
+  position: relative;
+  display: grid;
+  gap: 18px;
+  min-height: clamp(150px, 24svh, 230px);
+  padding: clamp(28px, 4.8vw, 52px) 0;
+  border-top: 1px solid rgba(17, 24, 39, 0.12);
+  outline: none;
+}
+
+.why-value:last-child {
+  border-bottom: 1px solid rgba(17, 24, 39, 0.12);
+}
+
+.why-value:focus-visible {
+  outline: 2px solid rgba(31, 123, 255, 0.9);
+  outline-offset: 10px;
+}
+
+.why-value__summary {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  align-items: baseline;
+  gap: clamp(18px, 3vw, 36px);
+}
+
+.why-value__number {
+  color: rgba(17, 24, 39, 0.32);
+  font-size: clamp(1.05rem, 1.5vw, 1.42rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0;
+  transition: color 300ms ease;
+}
+
+.why-value__title {
+  margin: 0;
+  color: rgba(17, 24, 39, 0.5);
+  font-size: clamp(1.85rem, 3.5vw, 4.1rem);
+  font-weight: 760;
+  line-height: 1;
+  letter-spacing: 0;
+  transition:
+    color 300ms ease,
+    transform 300ms ease;
+}
+
+.why-value__details {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr);
+  gap: clamp(18px, 3vw, 36px);
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(-4px);
+  transition:
+    max-height 340ms ease,
+    opacity 280ms ease,
+    transform 280ms ease;
+}
+
+.why-value__line {
+  display: block;
+  width: 0;
+  height: 2px;
+  margin-top: 13px;
+  background: #1f7bff;
+  transition: width 340ms ease;
+}
+
+.why-value__details p {
+  max-width: 520px;
+  margin: 0;
+  color: rgba(17, 24, 39, 0.66);
+  font-size: clamp(1rem, 1.3vw, 1.14rem);
+  line-height: 1.68;
+}
+
+.why-value--active .why-value__number {
+  color: #1f65c8;
+}
+
+.why-value--active .why-value__title {
+  color: #0b1220;
+  transform: translateX(4px);
+}
+
+.why-value--active .why-value__details {
+  max-height: 140px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.why-value--active .why-value__line {
+  width: 42px;
+}
+
+.why-value__mobile-visual {
+  display: none;
+}
+
+.why-stackneuro__visual {
+  position: sticky;
+  top: clamp(104px, 14vh, 132px);
+  min-width: 0;
+}
+
+.why-stackneuro__visual-frame {
+  position: relative;
+  overflow: hidden;
+  min-height: clamp(430px, 62vh, 620px);
+  border: 1px solid rgba(17, 24, 39, 0.1);
+  border-radius: 32px;
+  background: #ffffff;
+  box-shadow: 0 28px 80px rgba(17, 24, 39, 0.08);
+}
+
+.why-stackneuro__visual-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 340ms ease;
+}
+
+.why-stackneuro__visual-image--active {
+  opacity: 1;
+}
+
+@media (max-width: 1020px) {
+  .why-stackneuro__experience {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
+    gap: clamp(34px, 5vw, 64px);
+  }
+
+  .why-value__summary,
+  .why-value__details {
+    grid-template-columns: 52px 1fr;
+  }
+
+  .why-stackneuro__visual-frame {
+    min-height: clamp(360px, 54vh, 520px);
+  }
+}
+
+@media (max-width: 820px) {
+  .why-stackneuro {
+    overflow: hidden;
+  }
+
+  .why-stackneuro__transition {
+    height: 82px;
+  }
+
+  .why-stackneuro__inner {
+    padding-top: 48px;
+  }
+
+  .why-stackneuro__experience {
+    grid-template-columns: 1fr;
+    margin-top: 58px;
+  }
+
+  .why-stackneuro__visual {
+    display: none;
+  }
+
+  .why-stackneuro__values::after {
+    display: none;
+  }
+
+  .why-value {
+    min-height: auto;
+    padding: 34px 0;
+  }
+
+  .why-value__summary,
+  .why-value__details {
+    grid-template-columns: 48px 1fr;
+  }
+
+  .why-value__title {
+    color: #0b1220;
+  }
+
+  .why-value__number {
+    color: #1f65c8;
+  }
+
+  .why-value__details {
+    max-height: none;
+    opacity: 1;
+    overflow: visible;
+    transform: none;
+  }
+
+  .why-value__line {
+    width: 32px;
+  }
+
+  .why-value__mobile-visual {
+    display: block;
+    overflow: hidden;
+    margin: 8px 0 0;
+    border: 1px solid rgba(17, 24, 39, 0.1);
+    border-radius: 24px;
+    background: #ffffff;
+  }
+
+  .why-value__mobile-visual img {
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 560px) {
+  .why-stackneuro__inner {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .why-stackneuro__title {
+    font-size: clamp(2.12rem, 10.8vw, 3.75rem);
+  }
+
+  .why-value__summary,
+  .why-value__details {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .why-value__title {
+    font-size: clamp(1.92rem, 9.8vw, 3.05rem);
+  }
+
+  .why-value__line {
+    margin-top: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .why-value__number,
+  .why-value__title,
+  .why-value__details,
+  .why-value__line,
+  .why-stackneuro__visual-image {
+    transition: none;
+  }
+
+  .why-value--active .why-value__title {
+    transform: none;
+  }
+}

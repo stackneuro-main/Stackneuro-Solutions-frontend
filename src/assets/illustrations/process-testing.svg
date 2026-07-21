@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
+  <title id="title">Testing and quality assurance dashboard illustration</title>
+  <desc id="desc">A testing dashboard with QA checks, security status, and performance results.</desc>
+  <rect width="760" height="520" rx="36" fill="#111c31"/>
+  <rect x="94" y="82" width="572" height="356" rx="30" fill="#0a0f1f" stroke="#263856" stroke-width="2"/>
+  <g fill="#142139" stroke="#2a3e60" stroke-width="2">
+    <rect x="132" y="132" width="150" height="106" rx="22"/>
+    <rect x="306" y="132" width="150" height="106" rx="22"/>
+    <rect x="480" y="132" width="150" height="106" rx="22"/>
+    <rect x="132" y="272" width="498" height="112" rx="24"/>
+  </g>
+  <path d="M166 186l24 24 52-64M340 186l24 24 52-64M514 186l24 24 52-64" fill="none" stroke="#2d82ff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M166 320h190M166 348h122M416 348h160" stroke="#8ba4c8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M416 320h166" stroke="#2d82ff" stroke-width="8" stroke-linecap="round"/>
+</svg>

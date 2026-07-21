@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="560" viewBox="0 0 760 560" role="img" aria-labelledby="title desc">
+  <title id="title">Long-term support and monitoring illustration</title>
+  <desc id="desc">A support and maintenance console with monitoring signals and partnership touchpoints.</desc>
+  <rect width="760" height="560" rx="40" fill="#fafafa"/>
+  <rect x="86" y="84" width="588" height="392" rx="34" fill="#fff" stroke="#d8e0ea" stroke-width="2"/>
+  <rect x="126" y="132" width="250" height="288" rx="28" fill="#f4f7fb" stroke="#d8e0ea" stroke-width="2"/>
+  <rect x="406" y="132" width="228" height="288" rx="28" fill="#f4f7fb" stroke="#d8e0ea" stroke-width="2"/>
+  <circle cx="252" cy="234" r="48" fill="#eaf3ff" stroke="#cbd8e6" stroke-width="2"/>
+  <path d="M218 244c10-24 21-36 34-36 12 0 24 12 34 36" fill="none" stroke="#1f7bff" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="252" cy="205" r="16" fill="#1f7bff"/>
+  <g stroke="#7f96ad" stroke-width="8" stroke-linecap="round">
+    <path d="M166 326h170"/>
+    <path d="M166 356h118"/>
+    <path d="M444 188h122"/>
+    <path d="M444 324h122"/>
+  </g>
+  <path d="M444 254l34-34 42 48 58-78" fill="none" stroke="#1f7bff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#fff" stroke="#d8e0ea" stroke-width="2">
+    <rect x="430" y="350" width="152" height="44" rx="22"/>
+    <rect x="158" y="148" width="126" height="42" rx="21"/>
+  </g>
+  <path d="M458 372h96M184 169h72" stroke="#1f7bff" stroke-width="6" stroke-linecap="round"/>
+</svg>

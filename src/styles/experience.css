@@ -1,0 +1,67 @@
+.hero-intro-experience {
+  position: relative;
+  isolation: isolate;
+  background: #030711;
+}
+
+.experience__background {
+  position: sticky;
+  z-index: 0;
+  top: 0;
+  height: 100svh;
+  overflow: hidden;
+  pointer-events: none;
+  background: #030711;
+}
+
+.experience__content-flow {
+  position: relative;
+  z-index: 1;
+  margin-top: -100svh;
+}
+
+.experience__release-wash {
+  position: absolute;
+  inset: 52% 0 0;
+  z-index: 4;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(3, 7, 17, 0) 0%, rgba(4, 10, 22, 0.84) 78%, #040a16 100%),
+    radial-gradient(circle at 50% 100%, rgba(44, 119, 220, 0.13), transparent 32rem);
+}
+
+.experience__pin-spacer {
+  min-height: clamp(140px, 28svh, 280px);
+  pointer-events: none;
+}
+
+.experience__handoff {
+  position: relative;
+  z-index: 2;
+  min-height: clamp(120px, 22svh, 240px);
+  margin-top: -1px;
+  background:
+    linear-gradient(180deg, rgba(4, 10, 22, 0.9) 0%, #040a16 58%, #040a16 100%),
+    radial-gradient(circle at 78% 46%, rgba(39, 105, 194, 0.08), transparent 34rem);
+}
+
+@media (max-width: 860px) {
+  .experience__background {
+    position: sticky;
+    top: 0;
+    height: 100svh;
+  }
+
+  .experience__content-flow {
+    margin-top: -100svh;
+  }
+
+  .experience__release-wash {
+    inset: 46% 0 0;
+  }
+
+  .experience__handoff {
+    min-height: 120px;
+    background: linear-gradient(180deg, rgba(4, 10, 22, 0.44), #040a16);
+  }
+}

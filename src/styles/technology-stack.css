@@ -1,0 +1,639 @@
+.technology-stack {
+  position: relative;
+  z-index: 6;
+  overflow: clip;
+  margin-top: -1px;
+  color: #f8fbff;
+  background:
+    radial-gradient(circle at 18% 10%, rgba(45, 130, 255, 0.16), transparent 30rem),
+    radial-gradient(circle at 82% 24%, rgba(114, 91, 255, 0.1), transparent 26rem),
+    linear-gradient(rgba(148, 163, 184, 0.032) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.032) 1px, transparent 1px),
+    #0b1120;
+  background-size: auto, auto, 42px 42px, 42px 42px, auto;
+}
+
+.technology-stack__transition {
+  height: clamp(78px, 10vw, 132px);
+  background: linear-gradient(180deg, #fafafa 0%, #d9e1ec 18%, #1c273d 62%, #0b1120 100%);
+}
+
+.technology-stack__inner {
+  width: min(100%, 1360px);
+  margin: 0 auto;
+  padding: clamp(58px, 8vw, 108px) clamp(20px, 5vw, 72px) clamp(88px, 12vw, 152px);
+}
+
+.technology-stack__intro {
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.technology-stack__eyebrow,
+.technology-card__meta {
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.technology-stack__eyebrow {
+  margin: 0 0 18px;
+  color: rgba(139, 201, 255, 0.9);
+  font-size: 0.78rem;
+  font-weight: 850;
+}
+
+.technology-stack__title {
+  max-width: 960px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: clamp(2.35rem, 5.05vw, 5.4rem);
+  font-weight: 850;
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.technology-stack__description {
+  max-width: 780px;
+  margin: 26px auto 0;
+  color: rgba(226, 238, 255, 0.72);
+  font-size: clamp(1rem, 1.35vw, 1.16rem);
+  line-height: 1.72;
+}
+
+.technology-stack__experience {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(44px, 7vw, 96px);
+  margin-top: clamp(72px, 10vw, 132px);
+}
+
+.technology-stack__panel {
+  position: sticky;
+  top: clamp(92px, 12vh, 124px);
+  min-width: 0;
+}
+
+.technology-stack__panel-inner {
+  display: grid;
+  gap: 26px;
+  padding: clamp(22px, 3vw, 34px);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 28px;
+  background: #0f172a;
+  box-shadow:
+    0 28px 90px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.technology-stack__panel-visual {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 11;
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 22px;
+  background: #0b1120;
+}
+
+.technology-stack__panel-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 320ms ease;
+}
+
+.technology-stack__panel-image--active {
+  opacity: 1;
+}
+
+.technology-ecosystem {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(45, 130, 255, 0.18), transparent 9rem),
+    linear-gradient(rgba(148, 163, 184, 0.035) 1px, transparent 1px) 0 0 / 26px 26px,
+    linear-gradient(90deg, rgba(148, 163, 184, 0.035) 1px, transparent 1px) 0 0 / 26px 26px;
+}
+
+.technology-ecosystem__core,
+.technology-ecosystem__node,
+.technology-ecosystem__connector,
+.technology-ecosystem__ring {
+  position: absolute;
+  pointer-events: none;
+}
+
+.technology-ecosystem__core {
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  display: grid;
+  width: clamp(96px, 10vw, 132px);
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid rgba(139, 201, 255, 0.22);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 50% 28%, rgba(139, 201, 255, 0.18), transparent 54%),
+    rgba(15, 23, 42, 0.94);
+  color: rgba(245, 249, 255, 0.92);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  box-shadow:
+    0 0 46px rgba(45, 130, 255, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transform: translate(-50%, -50%);
+}
+
+.technology-ecosystem__ring {
+  inset: 18%;
+  border: 1px solid rgba(139, 201, 255, 0.12);
+  border-radius: 50%;
+}
+
+.technology-ecosystem__ring--inner {
+  inset: 30%;
+  border-color: rgba(139, 201, 255, 0.08);
+}
+
+.technology-ecosystem__node {
+  z-index: 4;
+  width: 18px;
+  aspect-ratio: 1;
+  border: 1px solid rgba(139, 201, 255, 0.32);
+  border-radius: 50%;
+  background: rgba(15, 23, 42, 0.96);
+  box-shadow: 0 0 0 8px rgba(45, 130, 255, 0.05);
+  transition:
+    background-color 280ms ease,
+    border-color 280ms ease,
+    box-shadow 280ms ease,
+    transform 280ms ease;
+}
+
+.technology-ecosystem__node--active {
+  border-color: rgba(147, 197, 253, 0.95);
+  background: #2d82ff;
+  box-shadow:
+    0 0 0 10px rgba(45, 130, 255, 0.14),
+    0 0 36px rgba(45, 130, 255, 0.56);
+  transform: scale(1.22);
+}
+
+.technology-ecosystem__node--1 {
+  top: 16%;
+  left: 49%;
+}
+
+.technology-ecosystem__node--2 {
+  top: 24%;
+  left: 74%;
+}
+
+.technology-ecosystem__node--3 {
+  top: 50%;
+  left: 82%;
+}
+
+.technology-ecosystem__node--4 {
+  top: 74%;
+  left: 72%;
+}
+
+.technology-ecosystem__node--5 {
+  top: 82%;
+  left: 48%;
+}
+
+.technology-ecosystem__node--6 {
+  top: 72%;
+  left: 24%;
+}
+
+.technology-ecosystem__node--7 {
+  top: 48%;
+  left: 16%;
+}
+
+.technology-ecosystem__node--8 {
+  top: 24%;
+  left: 24%;
+}
+
+.technology-ecosystem__connector {
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  width: 32%;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(45, 130, 255, 0.8), transparent);
+  box-shadow: 0 0 18px rgba(45, 130, 255, 0.42);
+  transform-origin: left center;
+  transition: transform 280ms ease;
+}
+
+.technology-ecosystem__connector--1 {
+  transform: rotate(-92deg);
+}
+
+.technology-ecosystem__connector--2 {
+  transform: rotate(-40deg);
+}
+
+.technology-ecosystem__connector--3 {
+  transform: rotate(0deg);
+}
+
+.technology-ecosystem__connector--4 {
+  transform: rotate(43deg);
+}
+
+.technology-ecosystem__connector--5 {
+  transform: rotate(92deg);
+}
+
+.technology-ecosystem__connector--6 {
+  transform: rotate(138deg);
+}
+
+.technology-ecosystem__connector--7 {
+  transform: rotate(180deg);
+}
+
+.technology-ecosystem__connector--8 {
+  transform: rotate(222deg);
+}
+
+.technology-stack__panel-copy {
+  display: grid;
+  gap: 16px;
+  animation: technologyPanelFade 320ms ease both;
+}
+
+.technology-stack__panel-label {
+  margin: 0;
+  color: #65b7ff;
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.technology-stack__panel-title {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2rem, 3.7vw, 4.1rem);
+  font-weight: 850;
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.technology-stack__panel-description {
+  margin: 0;
+  color: rgba(226, 238, 255, 0.7);
+  font-size: 1rem;
+  line-height: 1.68;
+}
+
+.technology-stack__current {
+  display: grid;
+  gap: 7px;
+  width: fit-content;
+  margin-top: 8px;
+  padding: 12px 15px;
+  border: 1px solid rgba(139, 201, 255, 0.17);
+  border-radius: 18px;
+  background: rgba(15, 23, 42, 0.88);
+  animation: technologyPanelFade 320ms ease both;
+}
+
+.technology-stack__current span {
+  color: rgba(139, 201, 255, 0.82);
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.technology-stack__current strong {
+  color: #ffffff;
+  font-size: 0.98rem;
+  font-weight: 850;
+}
+
+.technology-stack__panel-pills,
+.technology-card__pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.technology-stack__panel-pills {
+  animation: technologyPanelFade 320ms ease both;
+}
+
+.technology-stack__panel-pills li,
+.technology-card__pills li {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 13px;
+  border: 1px solid rgba(139, 201, 255, 0.17);
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.88);
+  color: rgba(239, 247, 255, 0.88);
+  font-size: 0.9rem;
+  font-weight: 760;
+  transition:
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.technology-stack__panel-pills li span {
+  color: #65b7ff;
+  font-weight: 900;
+}
+
+.technology-stack__panel-pills li:hover,
+.technology-card__pills li:hover {
+  border-color: rgba(101, 183, 255, 0.5);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.technology-stack__cards {
+  display: grid;
+  gap: clamp(34px, 5vw, 58px);
+}
+
+.technology-card {
+  display: grid;
+  align-content: center;
+  min-height: clamp(620px, 86svh, 820px);
+  gap: clamp(24px, 4vw, 42px);
+  padding: clamp(24px, 4vw, 48px);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 34px;
+  background:
+    radial-gradient(circle at 24% 0%, rgba(45, 130, 255, 0.12), transparent 24rem),
+    #101a2e;
+  box-shadow:
+    0 32px 90px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  outline: none;
+  transition:
+    border-color 240ms ease,
+    transform 240ms ease,
+    box-shadow 240ms ease;
+}
+
+.technology-card--active {
+  border-color: rgba(101, 183, 255, 0.34);
+  box-shadow:
+    0 34px 94px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(45, 130, 255, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.technology-card:focus-visible {
+  outline: 2px solid rgba(139, 201, 255, 0.96);
+  outline-offset: 6px;
+}
+
+.technology-card__media {
+  overflow: hidden;
+  aspect-ratio: 16 / 10.5;
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 26px;
+  background: #0b1120;
+}
+
+.technology-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.006);
+  transition: transform 320ms ease;
+}
+
+.technology-card--active .technology-card__media img {
+  transform: scale(1.018);
+}
+
+.technology-card__content {
+  display: grid;
+  gap: 18px;
+}
+
+.technology-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: rgba(139, 201, 255, 0.86);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.technology-card__meta span:first-child {
+  display: inline-grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid rgba(139, 201, 255, 0.22);
+  border-radius: 999px;
+}
+
+.technology-card__title {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2.15rem, 4.35vw, 4.85rem);
+  font-weight: 850;
+  line-height: 0.96;
+  letter-spacing: 0;
+}
+
+.technology-card__description {
+  max-width: 680px;
+  margin: 0;
+  color: rgba(226, 238, 255, 0.7);
+  font-size: clamp(1rem, 1.25vw, 1.14rem);
+  line-height: 1.7;
+}
+
+.technology-stack__cta {
+  display: grid;
+  justify-items: center;
+  gap: 24px;
+  max-width: 920px;
+  margin: clamp(58px, 8vw, 96px) auto 0;
+  padding: clamp(34px, 5vw, 54px) clamp(20px, 4vw, 54px);
+  border: 1px solid rgba(139, 201, 255, 0.16);
+  border-radius: 32px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(45, 130, 255, 0.18), transparent 24rem),
+    rgba(9, 18, 36, 0.86);
+  text-align: center;
+  box-shadow: 0 28px 84px rgba(0, 0, 0, 0.28);
+}
+
+.technology-stack__cta h3 {
+  max-width: 760px;
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(1.7rem, 3vw, 3.1rem);
+  font-weight: 850;
+  line-height: 1.06;
+}
+
+.technology-stack__cta a {
+  display: inline-flex;
+  min-height: 54px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 24px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #2d82ff, #67b7ff);
+  box-shadow: 0 18px 52px rgba(45, 130, 255, 0.28);
+  color: #04101f;
+  font-weight: 900;
+  text-decoration: none;
+  transition:
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.technology-stack__cta a span {
+  transition: transform 180ms ease;
+}
+
+.technology-stack__cta a:hover,
+.technology-stack__cta a:focus-visible {
+  box-shadow: 0 24px 66px rgba(45, 130, 255, 0.36);
+  transform: translateY(-2px);
+}
+
+.technology-stack__cta a:hover span,
+.technology-stack__cta a:focus-visible span {
+  transform: translateX(4px);
+}
+
+.technology-stack__cta a:focus-visible {
+  outline: 2px solid rgba(143, 199, 255, 0.9);
+  outline-offset: 5px;
+}
+
+@keyframes technologyPanelFade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1060px) {
+  .technology-stack__experience {
+    grid-template-columns: minmax(250px, 0.62fr) minmax(0, 1fr);
+    gap: clamp(30px, 5vw, 58px);
+  }
+
+  .technology-stack__panel-title {
+    font-size: clamp(1.82rem, 3.35vw, 3.2rem);
+  }
+}
+
+@media (max-width: 860px) {
+  .technology-stack {
+    overflow: hidden;
+  }
+
+  .technology-stack__transition {
+    height: 84px;
+  }
+
+  .technology-stack__inner {
+    padding-top: 50px;
+  }
+
+  .technology-stack__experience {
+    grid-template-columns: 1fr;
+    margin-top: 56px;
+  }
+
+  .technology-stack__panel {
+    display: none;
+  }
+
+  .technology-card {
+    min-height: auto;
+  }
+
+  .technology-card__media {
+    aspect-ratio: 16 / 11;
+  }
+}
+
+@media (max-width: 560px) {
+  .technology-stack__inner {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .technology-stack__title {
+    font-size: clamp(2.12rem, 10.8vw, 3.75rem);
+  }
+
+  .technology-card {
+    padding: 22px;
+    border-radius: 26px;
+  }
+
+  .technology-card__media {
+    border-radius: 20px;
+  }
+
+  .technology-card__title {
+    font-size: clamp(1.9rem, 9.8vw, 3.25rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .technology-stack__panel-image,
+  .technology-stack__panel-copy,
+  .technology-stack__current,
+  .technology-ecosystem__node,
+  .technology-ecosystem__connector,
+  .technology-stack__panel-pills li,
+  .technology-card,
+  .technology-card__media img,
+  .technology-card__pills li,
+  .technology-stack__cta a,
+  .technology-stack__cta a span {
+    animation: none;
+    transition: none;
+  }
+
+  .technology-card--active .technology-card__media img,
+  .technology-stack__cta a:hover,
+  .technology-stack__cta a:focus-visible,
+  .technology-stack__cta a:hover span,
+  .technology-stack__cta a:focus-visible span {
+    transform: none;
+  }
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="560" viewBox="0 0 760 560" role="img" aria-labelledby="title desc">
+  <title id="title">Security-first cloud infrastructure illustration</title>
+  <desc id="desc">A cybersecurity shield protecting cloud infrastructure and verified access layers.</desc>
+  <rect width="760" height="560" rx="40" fill="#fafafa"/>
+  <rect x="88" y="88" width="584" height="384" rx="34" fill="#fff" stroke="#d8e0ea" stroke-width="2"/>
+  <path d="M380 128l146 52v92c0 90-57 154-146 194-89-40-146-104-146-194v-92l146-52z" fill="#f1f7ff" stroke="#cbd8e6" stroke-width="2"/>
+  <path d="M332 284l34 34 72-92" fill="none" stroke="#1f7bff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#fff" stroke="#d8e0ea" stroke-width="2">
+    <rect x="122" y="184" width="132" height="54" rx="27"/>
+    <rect x="506" y="332" width="132" height="54" rx="27"/>
+    <rect x="132" y="374" width="132" height="54" rx="27"/>
+  </g>
+  <g stroke="#7f96ad" stroke-width="7" stroke-linecap="round">
+    <path d="M154 211h62"/>
+    <path d="M538 359h62"/>
+    <path d="M164 401h62"/>
+  </g>
+  <g fill="#1f7bff">
+    <circle cx="226" cy="211" r="7"/>
+    <circle cx="610" cy="359" r="7"/>
+    <circle cx="236" cy="401" r="7"/>
+  </g>
+  <path d="M254 211h62M444 359h62M264 401h58" stroke="#1f7bff" stroke-width="4" stroke-linecap="round" opacity=".58"/>
+</svg>

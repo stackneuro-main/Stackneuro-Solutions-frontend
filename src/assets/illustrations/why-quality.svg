@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="560" viewBox="0 0 760 560" role="img" aria-labelledby="title desc">
+  <title id="title">Engineering quality dashboard illustration</title>
+  <desc id="desc">A software engineering workflow dashboard with test status, code review, and performance checks.</desc>
+  <rect width="760" height="560" rx="40" fill="#fafafa"/>
+  <rect x="84" y="78" width="592" height="404" rx="34" fill="#fff" stroke="#d8e0ea" stroke-width="2"/>
+  <rect x="84" y="78" width="592" height="74" rx="34" fill="#0b1728"/>
+  <circle cx="126" cy="116" r="8" fill="#6ea7ff"/>
+  <circle cx="154" cy="116" r="8" fill="#8d7cff"/>
+  <circle cx="182" cy="116" r="8" fill="#20b8c8"/>
+  <g fill="#f4f7fb" stroke="#d8e0ea" stroke-width="2">
+    <rect x="124" y="194" width="178" height="118" rx="22"/>
+    <rect x="328" y="194" width="308" height="118" rx="22"/>
+    <rect x="124" y="338" width="286" height="94" rx="22"/>
+    <rect x="436" y="338" width="200" height="94" rx="22"/>
+  </g>
+  <path d="M162 256l32 31 72-84" fill="none" stroke="#1f7bff" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  <g stroke="#7f96ad" stroke-width="8" stroke-linecap="round">
+    <path d="M360 232h228"/>
+    <path d="M360 260h164"/>
+    <path d="M360 288h204"/>
+    <path d="M158 378h214"/>
+    <path d="M158 404h142"/>
+  </g>
+  <path d="M472 398h122M472 374h72" stroke="#1f7bff" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="596" cy="374" r="10" fill="#1f7bff"/>
+</svg>

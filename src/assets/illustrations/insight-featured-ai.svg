@@ -1,0 +1,13 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+  <rect width="1200" height="720" rx="42" fill="#0B1120"/>
+  <rect x="72" y="70" width="1056" height="580" rx="34" fill="#111D35" stroke="#2D82FF" stroke-opacity=".22"/>
+  <circle cx="344" cy="274" r="118" fill="#18345F"/>
+  <circle cx="344" cy="274" r="70" fill="#2D82FF"/>
+  <path d="M344 156v-48M344 440v-48M462 274h48M178 274h48M427 191l35-35M226 392l35-35M427 357l35 35M226 156l35 35" stroke="#8FC7FF" stroke-width="14" stroke-linecap="round"/>
+  <rect x="584" y="168" width="362" height="42" rx="21" fill="#E7F2FF" fill-opacity=".8"/>
+  <rect x="584" y="246" width="464" height="26" rx="13" fill="#7899C0"/>
+  <rect x="584" y="302" width="402" height="26" rx="13" fill="#526F99"/>
+  <rect x="584" y="402" width="196" height="92" rx="24" fill="#162844" stroke="#5CA7FF" stroke-opacity=".26"/>
+  <rect x="812" y="402" width="196" height="92" rx="24" fill="#162844" stroke="#5CA7FF" stroke-opacity=".26"/>
+  <path d="M162 564c126-94 250-94 376 0 126 94 250 94 376 0" stroke="#2D82FF" stroke-width="10" stroke-linecap="round"/>
+</svg>

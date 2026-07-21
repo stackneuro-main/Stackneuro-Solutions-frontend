@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="560" viewBox="0 0 760 560" role="img" aria-labelledby="title desc">
+  <title id="title">AI network and future technology illustration</title>
+  <desc id="desc">A refined AI network with connected intelligence nodes and digital product panels.</desc>
+  <rect width="760" height="560" rx="40" fill="#fafafa"/>
+  <rect x="86" y="78" width="588" height="404" rx="34" fill="#fff" stroke="#d8e0ea" stroke-width="2"/>
+  <path d="M134 386c58-118 138-190 240-216 109-27 192 6 252 98" fill="none" stroke="#dbe5ef" stroke-width="2"/>
+  <path d="M146 314c74-64 151-83 232-57 76 24 135 77 176 159" fill="none" stroke="#d3dfeb" stroke-width="2"/>
+  <g stroke="#1f7bff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M190 358l82-92 118 14 114 86 76-134"/>
+    <path d="M390 280l88-118"/>
+  </g>
+  <g fill="#fff" stroke="#cbd8e6" stroke-width="2">
+    <circle cx="190" cy="358" r="34"/>
+    <circle cx="272" cy="266" r="38"/>
+    <circle cx="390" cy="280" r="52"/>
+    <circle cx="504" cy="366" r="38"/>
+    <circle cx="580" cy="232" r="32"/>
+    <circle cx="478" cy="162" r="28"/>
+  </g>
+  <g fill="#1f7bff">
+    <circle cx="190" cy="358" r="9"/>
+    <circle cx="272" cy="266" r="10"/>
+    <circle cx="390" cy="280" r="13"/>
+    <circle cx="504" cy="366" r="10"/>
+    <circle cx="580" cy="232" r="9"/>
+    <circle cx="478" cy="162" r="8"/>
+  </g>
+  <g fill="#f2f7fd" stroke="#d8e0ea">
+    <rect x="126" y="118" width="132" height="44" rx="22"/>
+    <rect x="500" y="420" width="134" height="44" rx="22"/>
+  </g>
+  <path d="M154 140h76M528 442h78" stroke="#7f96ad" stroke-width="7" stroke-linecap="round"/>
+</svg>

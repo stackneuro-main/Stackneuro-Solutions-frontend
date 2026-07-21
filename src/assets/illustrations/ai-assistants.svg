@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="560" viewBox="0 0 760 560" role="img" aria-labelledby="title desc">
+  <title id="title">AI assistant conversation interface illustration</title>
+  <desc id="desc">A conversational assistant interface with intelligent response cards and automation signals.</desc>
+  <rect width="760" height="560" rx="42" fill="#f7f9fc"/>
+  <rect x="92" y="82" width="576" height="396" rx="34" fill="#fff" stroke="#d8e2ef" stroke-width="2"/>
+  <rect x="126" y="124" width="240" height="74" rx="28" fill="#edf5ff" stroke="#cddbec"/>
+  <rect x="394" y="218" width="240" height="74" rx="28" fill="#0f172a"/>
+  <rect x="126" y="318" width="292" height="74" rx="28" fill="#edf5ff" stroke="#cddbec"/>
+  <circle cx="160" cy="161" r="13" fill="#2d82ff"/>
+  <circle cx="600" cy="255" r="13" fill="#67b7ff"/>
+  <circle cx="160" cy="355" r="13" fill="#2d82ff"/>
+  <path d="M188 151h132M188 172h86M426 246h136M426 267h94M188 345h178M188 366h122" stroke="#7f95ad" stroke-width="8" stroke-linecap="round"/>
+  <path d="M508 122c34 16 55 43 64 80M254 430c-38-13-63-38-74-74" fill="none" stroke="#2d82ff" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="536" cy="118" r="22" fill="#e7f1ff" stroke="#cddbec"/>
+  <path d="M526 118h20M536 108v20" stroke="#2d82ff" stroke-width="5" stroke-linecap="round"/>
+</svg>
