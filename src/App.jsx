@@ -91,6 +91,7 @@ function App() {
     const mobileQuery = window.matchMedia('(max-width: 720px)');
     const reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
     const scrollableSelectors = [
+      '.services-category__cards',
       '.services-page-grid',
       '.services-page-expect__grid',
       '.work-page-projects',
