@@ -1,4 +1,5 @@
 import { contactCards, contactFields, contactIntro } from '../data/contact';
+import { serviceCategories } from '../data/services';
 import '../styles/contact.css';
 
 const contactIconPaths = {
@@ -36,6 +37,9 @@ function ContactIcon({ icon }) {
 }
 
 function Contact() {
+  const subjectField = contactFields.find((field) => field.name === 'subject');
+  const primaryFields = contactFields.filter((field) => field.name !== 'subject');
+
   return (
     <section className="contact-section" id="contact" aria-labelledby="contact-title">
       <div className="contact-section__inner">
@@ -65,7 +69,7 @@ function Contact() {
 
         <form className="contact-form" aria-label="Contact form">
           <div className="contact-form__grid">
-            {contactFields.map((field) => (
+            {primaryFields.map((field) => (
               <div className="contact-form__field" key={field.id}>
                 <label htmlFor={field.id}>{field.label}</label>
                 <input
@@ -77,6 +81,37 @@ function Contact() {
                 />
               </div>
             ))}
+
+            <div className="contact-form__field">
+              <label htmlFor="contact-service">Service</label>
+              <select id="contact-service" name="service" defaultValue="">
+                <option value="" disabled>
+                  Select a service
+                </option>
+                {serviceCategories.map((category) => (
+                  <optgroup label={category.label} key={category.id}>
+                    {category.services.map((service) => (
+                      <option value={service.name} key={service.name}>
+                        {service.name}
+                      </option>
+                    ))}
+                  </optgroup>
+                ))}
+              </select>
+            </div>
+
+            {subjectField ? (
+              <div className="contact-form__field" key={subjectField.id}>
+                <label htmlFor={subjectField.id}>{subjectField.label}</label>
+                <input
+                  autoComplete={subjectField.autoComplete}
+                  id={subjectField.id}
+                  name={subjectField.name}
+                  placeholder={subjectField.label}
+                  type={subjectField.type}
+                />
+              </div>
+            ) : null}
 
             <div className="contact-form__field contact-form__field--message">
               <label htmlFor="contact-message">Message</label>
