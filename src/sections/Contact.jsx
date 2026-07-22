@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import { contactCards, contactFields, contactIntro } from '../data/contact';
 import { serviceCategories } from '../data/services';
 import '../styles/contact.css';
+
+const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/$/, '');
 
 const contactIconPaths = {
   location: (
@@ -39,6 +42,62 @@ function ContactIcon({ icon }) {
 function Contact() {
   const subjectField = contactFields.find((field) => field.name === 'subject');
   const primaryFields = contactFields.filter((field) => field.name !== 'subject');
+  const [submissionState, setSubmissionState] = useState({
+    status: 'idle',
+    message: "We'll respond within one business day.",
+  });
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+    const payload = {
+      full_name: String(formData.get('name') || '').trim(),
+      email: String(formData.get('email') || '').trim(),
+      phone: String(formData.get('phone') || '').trim(),
+      company: String(formData.get('company') || '').trim(),
+      service: String(formData.get('service') || '').trim(),
+      subject: String(formData.get('subject') || '').trim(),
+      message: String(formData.get('message') || '').trim(),
+    };
+
+    setSubmissionState({
+      status: 'loading',
+      message: 'Submitting your enquiry...',
+    });
+
+    try {
+      const response = await fetch(`${API_BASE_URL}/api/contact`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await response.json().catch(() => ({}));
+
+      if (!response.ok) {
+        const detail = Array.isArray(data.errors)
+          ? data.errors.map((error) => error.msg).join(' ')
+          : data.detail || data.message;
+
+        throw new Error(detail || 'Unable to submit your enquiry. Please try again.');
+      }
+
+      form.reset();
+      setSubmissionState({
+        status: 'success',
+        message: `${data.message || 'Your enquiry has been submitted successfully.'} Enquiry ID: ${data.enquiry_id}`,
+      });
+    } catch (error) {
+      setSubmissionState({
+        status: 'error',
+        message: error instanceof Error ? error.message : 'Unable to submit your enquiry. Please try again.',
+      });
+    }
+  };
 
   return (
     <section className="contact-section" id="contact" aria-labelledby="contact-title">
@@ -67,7 +126,7 @@ function Contact() {
           </div>
         </div>
 
-        <form className="contact-form" aria-label="Contact form">
+        <form className="contact-form" aria-label="Contact form" onSubmit={handleSubmit}>
           <div className="contact-form__grid">
             {primaryFields.map((field) => (
               <div className="contact-form__field" key={field.id}>
@@ -77,6 +136,7 @@ function Contact() {
                   id={field.id}
                   name={field.name}
                   placeholder={field.label}
+                  required={field.name !== 'company'}
                   type={field.type}
                 />
               </div>
@@ -84,7 +144,7 @@ function Contact() {
 
             <div className="contact-form__field">
               <label htmlFor="contact-service">Service</label>
-              <select id="contact-service" name="service" defaultValue="">
+              <select id="contact-service" name="service" defaultValue="" required>
                 <option value="" disabled>
                   Select a service
                 </option>
@@ -108,6 +168,7 @@ function Contact() {
                   id={subjectField.id}
                   name={subjectField.name}
                   placeholder={subjectField.label}
+                  required
                   type={subjectField.type}
                 />
               </div>
@@ -115,14 +176,19 @@ function Contact() {
 
             <div className="contact-form__field contact-form__field--message">
               <label htmlFor="contact-message">Message</label>
-              <textarea id="contact-message" name="message" placeholder="Tell us about your project" rows="7" />
+              <textarea id="contact-message" name="message" placeholder="Tell us about your project" required rows="7" />
             </div>
           </div>
 
-          <button className="contact-form__button" type="submit">
-            Send Message
+          <button className="contact-form__button" disabled={submissionState.status === 'loading'} type="submit">
+            {submissionState.status === 'loading' ? 'Sending...' : 'Send Message'}
           </button>
-          <p className="contact-form__note">We'll respond within one business day.</p>
+          <p
+            className={`contact-form__note contact-form__note--${submissionState.status}`}
+            role={submissionState.status === 'error' ? 'alert' : 'status'}
+          >
+            {submissionState.message}
+          </p>
         </form>
       </div>
     </section>

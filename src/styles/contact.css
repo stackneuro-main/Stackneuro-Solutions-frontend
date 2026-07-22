@@ -229,12 +229,33 @@
   transform: translateY(-3px);
 }
 
+.contact-form__button:disabled {
+  cursor: wait;
+  opacity: 0.72;
+  transform: none;
+}
+
 .contact-form__note {
   margin: 14px 0 0;
   color: rgba(17, 24, 39, 0.56);
   font-size: 0.92rem;
   line-height: 1.5;
   text-align: center;
+}
+
+.contact-form__note--success {
+  color: #137c4b;
+  font-weight: 800;
+}
+
+.contact-form__note--error {
+  color: #b42318;
+  font-weight: 800;
+}
+
+.contact-form__note--loading {
+  color: #146bd8;
+  font-weight: 800;
 }
 
 .contact-form__button:focus-visible {
