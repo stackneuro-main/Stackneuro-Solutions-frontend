@@ -1,11 +1,17 @@
 export const whatsappWidgetConfig = {
   enabled: true,
   phoneNumber: '918480199506',
-  defaultMessage: `Hello Stackneuro Team,
+  defaultMessage: `Hello Stackneuro Solutions,
 
-I'm interested in your services and would like to discuss my project.
+I hope you're doing well.
 
-Please let me know how we can get started.`,
+I recently explored your website and was impressed by your expertise and the quality of solutions your team delivers. I'm interested in discussing my project requirements and exploring how Stackneuro Solutions can help transform my ideas into a scalable and impactful solution.
+
+I would appreciate the opportunity to connect with your team, understand your approach, and discuss the best way to move forward.
+
+Looking forward to your response.
+
+Thank you.`,
   tooltipMessages: [
     'Need help with your project?',
     "Let's discuss your idea.",
