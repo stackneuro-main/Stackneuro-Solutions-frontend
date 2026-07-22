@@ -1,4 +1,5 @@
 import glowGraceImage from '../assets/images/featured-glow-grace.png';
+import justFriedChickenImage from '../assets/images/featured-just-fried-chicken.png';
 import ollyBagunImage from '../assets/images/featured-ollybagun.png';
 import swadeshAcademyImage from '../assets/images/featured-swadesh-academy.png';
 import visionAcademyImage from '../assets/images/featured-vision-academy.png';
@@ -7,7 +8,7 @@ export const workPageHero = {
   eyebrow: 'Portfolio',
   title: 'Our Work',
   description:
-    'Explore completed Stackneuro projects built for organizations across social impact, beauty and wellness, education, and professional training.',
+    'Explore completed Stackneuro projects built for organizations across social impact, beauty and wellness, education, food services, and professional training.',
 };
 
 export const portfolioProjects = [
@@ -57,6 +58,18 @@ export const portfolioProjects = [
     year: '2025',
     image: swadeshAcademyImage,
     alt: 'Swadesh Academy technology education platform homepage screenshot',
+    fit: 'contain',
+  },
+  {
+    name: 'Just Fried Chicken',
+    category: 'Restaurant Website',
+    description:
+      'A vibrant restaurant website built to showcase food offerings, strengthen local brand appeal, simplify customer enquiries, and create a stronger digital presence.',
+    industry: 'Food & Restaurant',
+    outcome: 'Improved brand visibility, clearer menu discovery, and stronger customer engagement.',
+    year: '2025',
+    image: justFriedChickenImage,
+    alt: 'Just Fried Chicken restaurant website homepage screenshot',
     fit: 'contain',
   },
 ];
@@ -157,6 +170,30 @@ export const flagshipCaseStudies = [
     ],
     outcome:
       'Swadesh Academy gained a modern learning platform that communicates technical expertise, builds learner trust, and supports course enquiry growth.',
+  },
+  {
+    title: 'Just Fried Chicken',
+    industry: 'Food & Restaurant',
+    objective:
+      'Create a modern restaurant website that helps customers discover menu offerings, understand the brand experience, and connect with the business more easily.',
+    challenge:
+      'The restaurant needed a professional digital presence that could present its food items, offers, location information, and customer-focused messaging in a clean and engaging way.',
+    solution:
+      'Designed and developed a responsive restaurant website with an appetizing visual experience, structured menu presentation, strong calls-to-action, brand-focused sections, and mobile-friendly browsing.',
+    results: [
+      'Stronger restaurant branding',
+      'Improved menu visibility',
+      'Better customer engagement',
+      'Enhanced local digital presence',
+    ],
+    benefits: [
+      'Professional online identity',
+      'Easy food discovery',
+      'Responsive customer experience',
+      'Improved trust and accessibility',
+    ],
+    outcome:
+      'Just Fried Chicken gained a polished restaurant website that helps customers explore offerings quickly, connect with the brand, and engage with the business across devices.',
   },
 ];
 

@@ -68,7 +68,7 @@ function OurWorkPage() {
           </h2>
           <p>
             Explore a selection of real-world projects delivered by Stackneuro Solutions across education, NGOs,
-            beauty & wellness, enterprise software, AI, and digital transformation. Every project reflects our
+            beauty & wellness, food services, enterprise software, AI, and digital transformation. Every project reflects our
             commitment to solving real business challenges with thoughtful design and technology.
           </p>
         </div>
